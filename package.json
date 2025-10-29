@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^2.9.2",
     "@remixicon/react": "^4.7.0",
     "react": "^19.1.1",
@@ -18,19 +19,32 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.4",
     "remixicon": "^4.7.0"
+=======
+    "@tailwindcss/vite": "^4.1.14",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.14"
+>>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.4",
+<<<<<<< HEAD
     "autoprefixer": "^10.4.21",
+=======
+>>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
+<<<<<<< HEAD
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
+=======
+>>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b
     "vite": "^7.1.7"
   }
 }
