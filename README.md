@@ -1,75 +1,59 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌌 **Snipora – Code & Notes Saver App**
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# 🌌 **Snipora**
-
-**Snipora** is a lightweight and modern **React application** for saving, organizing, and managing your **notes and code snippets** — all in one place.
-Built for developers and learners, it combines speed, simplicity, and style.
-Your snippets stay secure in your browser with **LocalStorage**, so you never lose them.
+**Snipora** is a modern and minimal **React.js web application** that lets users save, organize, and manage **code snippets and notes** efficiently.
+Designed for developers and learners, it combines simplicity, speed, and a responsive UI for seamless productivity.
+All your snippets are stored securely in your browser using **LocalStorage**.
 
 ---
 
 ## ✨ **Features**
 
-* 🧾 **Create / Read / Update / Delete (CRUD)** operations for notes and snippets
+* 🧾 Full **CRUD operations** for notes and code snippets
 * 🔍 **Instant Search** by title or content
-* 📋 **Copy to Clipboard** with a single click
-* 💾 **Persistent Storage** using LocalStorage
-* 🔔 **Toast Notifications** for every key action
-* 🌈 **Clean and Responsive UI** with Tailwind CSS
-* ⚡ **Global State Management** with Redux Toolkit
+* 📋 **Copy to Clipboard** functionality
+* 💾 **Persistent Storage** with LocalStorage
+* 🔔 **Toast Notifications** for key actions
+* 🌈 **Responsive UI** built with Tailwind CSS
+* ⚡ **Global State Management** using Redux Toolkit
 
 ---
 
 ## 🧰 **Tech Stack**
 
-| Technology           | Purpose                    |
-| -------------------- | -------------------------- |
-| **React.js**         | Frontend framework         |
-| **Redux Toolkit**    | State management           |
-| **Tailwind CSS**     | Styling and responsiveness |
-| **LocalStorage** | Data persistence           |
-| **React Toastify**   | Notifications and alerts   |
+| Technology         | Purpose                    |
+| ------------------ | -------------------------- |
+| **React.js**       | Frontend framework         |
+| **Redux Toolkit**  | State management           |
+| **Tailwind CSS**   | Styling and responsiveness |
+| **LocalStorage**   | Data persistence           |
+| **react-hot-toast** | Notifications              |
+| **Figma**          | UI/UX design prototype     |
 
 ---
 
 ## ⚙️ **Installation and Setup**
 
-1️⃣ Clone the repository
+1️⃣ **Clone the repository**
 
 ```bash
 git clone https://github.com/mrunalisa/snipora.git
 cd snipora
 ```
 
-2️⃣ Install dependencies
+2️⃣ **Install dependencies**
 
 ```bash
 npm install
 ```
 
-3️⃣ Run the app
+3️⃣ **Run the app**
 
 ```bash
 npm start
 ```
 
-Your app will run locally at **[http://localhost:3000](http://localhost:3000)**
+Your app will run locally at **[http://localhost:5173](http://localhost:5173)**
 
 ---
 
@@ -77,70 +61,62 @@ Your app will run locally at **[http://localhost:3000](http://localhost:3000)**
 
 ```
 snipora/
-│
+├── public/              # Static assets
 ├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── NoteCard.jsx
-│   │   ├── NoteForm.jsx
-│   │   ├── SearchBar.jsx
-│   │   └── ToastContainer.jsx
-│   │
-│   ├── features/
-│   │   └── notes/
-│   │       ├── notesSlice.js
-│   │       └── selectors.js
-│   │
-│   ├── pages/
+│   ├── assets/          # Images and icons
+│   ├── components/      # React components
 │   │   ├── Home.jsx
-│   │   ├── AddNote.jsx
-│   │   └── EditNote.jsx
-│   │
-│   ├── utils/
-│   │   └── localStorage.js
-│   │
+│   │   ├── Navbar.jsx
+│   │   ├── Paste.jsx
+│   │   └── ViewPaste.jsx
+│   ├── redux/           # Redux store and slices
+│   │   ├── pasteSlice.js
+│   │   └── store.js
 │   ├── App.jsx
 │   ├── main.jsx
-│   └── index.css
-│
-└── package.json
+│   ├── index.css
+│   └── App.css
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
 ```
 
 ---
 
 ## 💡 **How to Use**
 
-1. 📝 **Add a Note/Snippet** — Provide a title, category (optional), and content. Click **Save**.
-2. ✏️ **Edit or Delete** — Modify or remove any existing note.
-3. 🔍 **Search** — Instantly find what you need with the search bar.
-4. 📋 **Copy Snippet** — One click copies your code to the clipboard.
-5. 💾 **Auto Save** — All your data is stored safely in LocalStorage.
+1. 📝 Add a **note/snippet** with title and content.
+2. ✏️ Edit or delete any existing note.
+3. 🔍 Use **search** to quickly find your snippets.
+4. 📋 Copy snippets with one click.
+5. 💾 Data stays saved in **LocalStorage**.
 
 ---
 
 ## 🌠 **Future Enhancements**
 
 * 🧩 Code syntax highlighting
-* 🌓 Dark / Light mode toggle
-* ☁️ Cloud backup and user authentication
+* 🌓 Dark/Light mode toggle
+* ☁️ Cloud sync and user authentication
 * 🗂️ Folder-based organization
-* 🤖 AI note suggestions
+* 🤖 AI-based note suggestions
 
 ---
 
 ## 🧑‍💻 **Author**
 
 **Developed by:** [Mrunali Badgujar]
-**GitHub:** [mrunalisa]
-**Email:** [[mrucoder@gmail.com](mailto:mrucoder@gmail.com)]
+**GitHub:** [mrunalisa](https://github.com/mrunalisa)
+**Email:** [mrucoder@gmail.com](mailto:mrucoder@gmail.com)
 
 ---
 
 ## 📜 **License**
 
-This project is licensed under the **MIT License** — free to use, modify, and share.
+This project is licensed under the **MIT License** — free to use and modify.
 
 ---
 
 > *“Snipora — Illuminate your ideas, store your snippets.”* 🌌
->>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b
+
+---
