@@ -106,7 +106,9 @@ snipora/
 ## 🧑‍💻 **Author**
 
 **Developed by:** [Mrunali Badgujar]
+
 **GitHub:** [mrunalisa](https://github.com/mrunalisa)
+
 **Email:** [mrucoder@gmail.com](mailto:mrucoder@gmail.com)
 
 ---
