@@ -1,9 +1,1 @@
-<<<<<<< HEAD
 @import "remixicon/fonts/remixicon.css"; 
-=======
-@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Special+Elite&display=swap");
-@import "tailwindcss";
-@theme {
-  --font-Italiano: "Italianno", cursive;
-}
->>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b

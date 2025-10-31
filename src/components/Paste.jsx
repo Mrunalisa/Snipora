@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import { useSelector } from 'react-redux'
@@ -81,22 +80,3 @@ const Paste = () => {
 }
 
 export default Paste
-=======
-import { useLocation } from "react-router-dom";
-
-function Paste() {
-  const location = useLocation();
-  const pastes = location.state?.pastes || [];
-
-  return (  
-    <div>
-    <h1> Pastes</h1>
-   
-    {pastes.map(paste => (
-      <><h3>{paste.title}</h3><p>{paste.content}</p></>
-    ))}
-    </div>
-  );
-
-}
->>>>>>> d85bbff2dec2daad079d3defac003ca6e488db1b
